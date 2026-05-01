@@ -51,9 +51,11 @@ const CoursesCard = ({ course }) => {
           </div>
 
           {/* Button */}
-          <button className="w-full mt-3 bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg transition duration-300">
-            View Details
-          </button>
+          <Link href={`/courses/${course.id}`}>
+            <button className="w-full mt-3 bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg transition duration-300">
+              View Details
+            </button>
+          </Link>
         </div>
       </div>
     </div>
