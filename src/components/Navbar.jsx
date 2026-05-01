@@ -11,7 +11,7 @@ const Navbar = () => {
           <h3 className="font-black text-2xl">Learning Platform</h3>
         </div>
 
-        <ul className="flex items-center gap-5 text-sm">
+        <ul className="flex items-center gap-5">
           <li>
             <Link href={'/'} className="text-lg font-bold">
               Home
@@ -31,12 +31,14 @@ const Navbar = () => {
         </ul>
 
         <div className="flex gap-4">
-          <Button variant='primary'>
-            <Link href={'/signup'}>SignUp</Link>
-          </Button>
-          <Button variant="primary">
-            <Link href={'/signin'}>SignIn</Link>
-          </Button>
+          <Link href={'/signup'}>
+            <Button variant="primary">Sign Up</Button>
+          </Link>
+          <Link href={'/signup'}>
+            <Button variant="primary">Sign In</Button>
+          </Link>
+
+         
         </div>
       </nav>
     </div>

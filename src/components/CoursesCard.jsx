@@ -35,17 +35,24 @@ const CoursesCard = ({ course }) => {
           </p>
 
           {/* Rating */}
-          <div className="flex items-center gap-1 text-yellow-500">
-            <Star size={16} fill="currentColor" />
-            {/* <Star></Star> */}
-            <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
-              {course.rating}
-            </span>
+          <div className="flex justify-between">
+            <div className="flex items-center gap-1 text-yellow-500 ">
+              <Star size={16} fill="currentColor" />
+              {/* <Star></Star> */}
+              <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                {course.rating}
+              </span>
+            </div>
+            <div>
+              <p className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                {course.duration}
+              </p>
+            </div>
           </div>
 
           {/* Button */}
-          <button  className="w-full mt-3 bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg transition duration-300">
-             View Details
+          <button className="w-full mt-3 bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg transition duration-300">
+            View Details
           </button>
         </div>
       </div>
