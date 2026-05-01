@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Web Development",
+    "level": "Beginner"
+  },
+  {
+    "id": 2,
+    "title": "Data Science",
+    "level": "Intermediate"
+  },
+  {
+    "id": 3,
+    "title": "Design",
+    "level": "Beginner"
+  },
+  {
+    "id": 4,
+    "title": "Digital Marketing",
+    "level": "Beginner"
+  },
+  {
+    "id": 5,
+    "title": "Photography",
+    "level": "Beginner"
+  },
+  {
+    "id": 6,
+    "title": "Business",
+    "level": "Intermediate"
+  },
+  {
+    "id": 7,
+    "title": "Mobile Development",
+    "level": "Intermediate"
+  },
+  {
+    "id": 8,
+    "title": "Cybersecurity",
+    "level": "Beginner"
+  },
+  {
+    "id": 9,
+    "title": "Language & Communication",
+    "level": "Beginner"
+  },
+  {
+    "id": 10,
+    "title": "Video Editing",
+    "level": "Intermediate"
+  },
+  {
+    "id": 11,
+    "title": "Finance",
+    "level": "Beginner"
+  },
+  {
+    "id": 12,
+    "title": "Artificial Intelligence",
+    "level": "Beginner"
+  }
+]
