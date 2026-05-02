@@ -1,6 +1,7 @@
 'use client';
 import { authClient } from '@/lib/auth-client';
 import { Check } from '@gravity-ui/icons';
+import { FcGoogle } from 'react-icons/fc';
 import {
   Button,
   Card,
@@ -11,6 +12,7 @@ import {
   Label,
   TextField,
 } from '@heroui/react';
+import Link from 'next/link';
 
 const SignInPage = () => {
   const onSubmit = async e => {
@@ -27,12 +29,18 @@ const SignInPage = () => {
     console.log(data, error);
   };
 
+  const handleGoogleSignIn =async () => {
+    await authClient.signIn.social({
+    provider:'google'
+  })
+}
+
+
   return (
     <Card className="border mx-auto w-125 py-10 mt-5">
       <h1 className="text-center text-2xl font-bold">Login Your Account</h1>
 
       <Form className="flex w-96 mx-auto flex-col gap-4" onSubmit={onSubmit}>
-     
         <TextField
           isRequired
           name="email"
@@ -84,6 +92,22 @@ const SignInPage = () => {
           </Button>
         </div>
       </Form>
+      <div className="text-center items-center">
+        <p>
+          Don't Have a Account?{' '}
+          <Link href={'/signup'} className="text-red-500">
+            Register
+          </Link>
+        </p>
+        <p className="text-center text-2xl font-semibold mt-4">OR</p>
+        <Button
+          onClick={handleGoogleSignIn}
+          variant="outline"
+          className={'w-full'}
+        >
+          <FcGoogle /> Sign with Google
+        </Button>
+      </div>
     </Card>
   );
 };
